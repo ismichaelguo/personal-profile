@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/*font family*/
+$Roboto: 'Roboto', sans-serif;  
+$Fondamento: "Fondamento", cursive;
+$footer-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+/*colors*/
+$yellow: #ffda00;
+$black: #1a1a1a;
+$white: #ffffff;
+$grey: #49515d;
+$greyV2: #595959;
+$greyV3: #404040;
+$lightgrey: #cccccc;
+$red: #e41837;
+$redV2: #b6132c;
+$blue: #006991;
+
+/*media query*/
+// Small tablets and large smartphones (landscape view)
+$screen-small-max: 375px;
+
+// Small tablets (portrait view)
+$screen-medium-max: 768px;
+
+@mixin ipad() {
+  @media (max-width: #{$screen-medium-max}) {
+    @content;
+  }
+}
+@mixin iphone() {
+  @media (max-width: #{$screen-small-max}) {
+    @content;
+  }
+}
+
+/*default type of main-nav*/
+
+
+
+
+

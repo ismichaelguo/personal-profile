@@ -1,0 +1,116 @@
+@import "./config";
+
+.aboutMe {
+  width: 100%;
+  background: url("../image/homepage-dust.svg") repeat;
+  position: relative;
+
+  &__helloLogo {
+    position: absolute;
+    background: url("../image/hello.png") no-repeat;
+    background-size: cover;
+    width: 35rem;
+    height: 26rem;
+    left: 37rem;
+    top: -2rem;
+  }
+
+  .aboutMe__container {
+    display: flex;
+    justify-content: center;
+
+    @include ipad() {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__intro {
+      width: 33rem;
+      margin-right: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include ipad() {
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      @include iphone() {
+        width: 18rem;
+        margin-right: 0;
+        margin-top: 2rem;
+      }
+
+      & h3 {
+        color: black;
+        position: relative;
+        font-size: 3rem;
+        margin: 0;
+
+        @include iphone() {
+          font-size: 2rem;
+        }
+      }
+
+      & h4 {
+        color: black;
+        position: relative;
+        font-size: 3rem;
+        margin: 0;
+        @include iphone() {
+          font-size: 2rem;
+        }
+
+        &:after {
+          content: "I'm Michael Guo";
+          position: absolute;
+          color: transparent;
+          background: -webkit-linear-gradient(left, #fdeb71, #ffda00, #fec163);
+          background-clip: text;
+          clip-path: circle(50px at 0% 50%);
+          animation: light 5s infinite;
+          left: 0;
+          -webkit-background-clip: text;
+
+          @keyframes light {
+            0% {
+              clip-path: circle(80px at 0% 50%);
+            }
+            50% {
+              clip-path: circle(80px at 100% 50%);
+            }
+            100% {
+              clip-path: circle(80px at 0% 50%);
+            }
+          }
+        }
+      }
+
+      & p {
+        color: grey;
+      }
+    }
+
+    &__photo {
+      box-shadow: 0 0 5px grey;
+      width: 22rem;
+
+      @include iphone() {
+        width: 18rem;
+        margin-top: 2rem;
+      }
+
+      & img {
+        width: 22rem;
+        height: 30rem;
+
+        @include iphone() {
+          width: 18rem;
+          height: 26rem;
+        }
+      }
+    }
+  }
+}

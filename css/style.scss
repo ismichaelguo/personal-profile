@@ -1,0 +1,127 @@
+@import "./config";
+@import "./about-me";
+@import "./resume";
+@import "./services";
+@import "./contact";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffda00 !important;
+    z-index: 999;
+    height: 5rem;
+    background: url("../image/nav-dust.svg");
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Fondamento", cursive;
+    display: flex;
+    justify-content: space-around;
+
+    @include ipad() {
+      justify-content: flex-start;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      color: black;
+      font-size: 1.5rem;
+      min-width: 40rem;
+      & li {
+        & a {
+          text-decoration: none;
+          background-size: 0 100%;
+          background-repeat: no-repeat;
+          transition: background-size 0.4s ease;
+
+          &:visited {
+            color: black;
+          }
+        }
+        &:hover {
+          background: linear-gradient(transparent 50%, white 50%);
+        }
+      }
+
+      @include ipad() {
+        display: none;
+      }
+    }
+
+    &__dropdown {
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(transparent 50%, white 50%);
+      }
+
+      & img {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        top: 1rem;
+
+        @include ipad() {
+          left: 2rem;
+        }
+      }
+      & div {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 30rem;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: all 1s ease;
+        width: 25rem;
+        left: -18rem;
+        background: url("../image/dropDown-stardust.png") repeat;
+        opacity: 0.9;
+        height: 100vh;
+
+        @include ipad() {
+          left: 0;
+          opacity: 0.9;
+        }
+
+        @include iphone() {
+          left: 0;
+          opacity: 0.9;
+          width: 13rem;
+        }
+
+        & a {
+          display: block;
+          color: $yellow;
+          text-decoration: none;
+          text-align: left;
+          font-size: 2rem;
+          width: 12rem;
+          margin-left: 2rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+          font-family: "Roboto", sans-serif;
+
+          @include iphone() {
+            font-size: 1.5rem;
+          }
+
+          &:hover {
+            background: linear-gradient(transparent 50%, white 50%);
+          }
+        }
+      }
+      .show {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "personal-profile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismichaelguo/personal-profile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismichaelguo/personal-profile/issues"
+  },
+  "homepage": "https://github.com/ismichaelguo/personal-profile#readme",
+  "description": "",
+  "dependencies": {
+    "lsof": "^0.1.0"
+  }
+}

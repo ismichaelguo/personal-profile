@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://use.fontawesome.com/280c704b01.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Merriweather:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <ul class="header__nav">
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#resume">Experience</a></li>
+            <li><a href="#myServices">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="header__dropdown">
+            <img src="./image/open-menu.svg" class="dropBtn" alt="" onclick="dropDown()">
+            <div id="myDropdown">
+                <a href="#aboutMe">About Me</a>
+                <a href="#resume">Experience</a>
+                <a href="#myServices">Skill</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <div id="fullpage">
+        <section menuanchor="aboutMe" class="section page aboutMe">
+            <div class="aboutMe__helloLogo"></div>
+            <div class="aboutMe__container">
+                <div class="aboutMe__container__intro">
+                    <h3>Hello</h3>
+                    <h4>I'm Michael Guo</h4>
+                    <p id="typing"></p>
+
+                </div>
+                <div class="aboutMe__container__photo">
+                    <img src="./image/photo.jpeg" alt="Photo" />
+                </div>
+            </div>
+
+        </section>
+        <section menuanchor="resume" class="section page myResume">
+            <div class="myResume__container">
+                <h3 class="myResume__container__title">My Resume</h3>
+                <div class="myResume__container__timelines">
+                    <div class="timeline-container">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <!-- item 1 -->
+                            <div class="timeline__item">
+                                <h4>JR Academy</h4>
+                                <span>2020 - present</span>
+                                <p>Performance education, practical job skills.</p>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="timeline__item">
+                                <h4>Australian Technical and Management College</h4>
+                                <span>2020 - present</span>
+                                <p>Full Stack Web Development Training</p>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="timeline__item">
+                                <h4>Master of Information Technology</h4>
+                                <span>July 2017 – June 2019 </span>
+                                <p>2 year Information and Technology course, which provided me solid knowledge
+                                    background and logical thinking.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-container">
+                        <h3>Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <h4>Team Project: Online Pizza Order System</h4>
+                                <span><a href="">Go To Demo</a></span>
+                                <p>As the team leader led 6-people Scrum team, Complete a Domino’s Pizza clone for pizza
+                                    online ordering with frontend and backend.
+                                </p>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="timeline__item">
+                                <h4>Personal Project: Weather App
+                                </h4>
+                                <span><a href="http://weather-app-michael.s3-website.us-east-2.amazonaws.com/">Go To
+                                        Demo</a></span>
+                                <p>A weather app display city landmark’ cards and providing current and forecasting
+                                    weather.
+                                </p>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="timeline__item">
+                                <h4>Personal profile</h4>
+                                <span></span>
+                                <p>A fancy personal profile as you seen.</p>
+                            </div>
+                        </div>
+                        <!-- item 1 -->
+
+                    </div>
+                </div>
+
+        </section>
+        <section menuanchor="myServices" class="section page myService">
+            <h3>My Services</h3>
+            <div class="myService__container">
+                <div class="myService__container__info">
+                    <div class="imgContainer">
+                        <img src="./image/web_design_icon.png" alt="WEB DESIGN">
+                    </div>
+                    <h4>Front-end</h4>
+                    <p>Skills: HTML5, CSS3, SASS, Bootstrap, JavaScript(ES6), React.js, React， Redux, React Router.</p>
+                </div>
+                <div class="myService__container__info">
+                    <div class="imgContainer">
+                        <img src="./image/backend.svg" alt="WEB DESIGN">
+                    </div>
+                    <h4>Back-end</h4>
+                    <p>Skill: Node.js, Koa.js, RESTful API, Postman, Swagger, MongoDB, MySQL.</p>
+                </div>
+                <div class="myService__container__info">
+                    <div class="imgContainer">
+                        <img src="./image/manager.svg" alt="WEB DESIGN">
+                    </div>
+                    <h4>Management</h4>
+                    <p>Have lead experience in an Scrum team with Jira, Bitbucket and Slack for cooperation.</p>
+                </div>
+                <div class="myService__container__info">
+                    <div class="imgContainer">
+                        <img src="./image/meeting.svg" alt="WEB DESIGN">
+                    </div>
+                    <h4>Communication</h4>
+                    <p>I am a team person, able to communicate and collaborate with people from different background.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section menuanchor="contact" class="section page myContact">
+            <div class="myContact__title">Contact</div>
+            <div class="myContact__container">
+                <div class="myContact__container__info">
+                    <h4>Get in Touch</h4>
+
+                    <div class="mapContainer">
+                        <div id="map"></div>
+                    </div>
+                    <div class="details">
+                        <div class="detail__item">
+                            <p>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </p>
+                            <h5>Sydney, Australia</h5>
+                        </div>
+                        <div class="detail__item">
+                            <p>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </p>
+                            <h5>ismichaelguo@gmail.com</h5>
+                        </div>
+                        <div class="detail__item">
+                            <p>
+                                <i class="fa fa-phone"></i>
+                            </p>
+                            <h5>0452113417</h5>
+                        </div>
+                        <div class="detail__item">
+                            <p>
+                                <i class="fa fa-github"></i>
+                            </p>
+                            <h5>https://github.com/ismichaelguo</h5>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="myContact__container__form">
+                    <h4>Contact Form</h4>
+                    <form action="https://formspree.io/ismichaelguo@gmail.com" method="post">
+                        <div>
+                            <p>
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </p>
+                            <input id="nameInput" type="text" name='name' placeholder="Full name" />
+                            <div id="name-error">Valid name is required!</div>
+                        </div>
+                        <div>
+                            <p>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </p>
+                            <input id="emailInput" type="text" name='email' placeholder="Email address" />
+                            <div id="email-error">Valid email is required!</div>
+                        </div>
+                        <div>
+                            <p>
+                                <i class="fa fa-commenting" aria-hidden="true"></i>
+                            </p>
+                            <textarea id="messageInput" name='message' placeholder="Enter Your Message"></textarea>
+                            <div id="message-error">Please leave message here!</div>
+
+                        </div>
+                        <button onclick="handleSubmit(event)" type="submit" id="submit" name="submit">Send
+                            Message</button>
+                    </form>
+                </div>
+
+
+            </div>
+    </div>
+    </div>
+    </section>
+    </div>
+
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/vendors/jquery.slimscroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?language=en-UK&key=AIzaSyBzlbFcdPNgK2_dxXEIBO5K0kuEX05h70c&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
+
+    <script type="text/javascript">
+        //scroll function 
+        $(function () {
+            $('#fullpage').fullpage({
+                paddingTop: '3rem',
+                sectionSelector: '.page',
+                scrollOverflow: true,
+                anchors: ['aboutMe', 'resume', 'myServices', 'contact'],
+                fitToSectionDelay: 1500,
+            });
+        });
+
+        //typing function
+        let onTyping = document.getElementById('typing');
+        const waitToType = "Full Stack Web Developer & Front-end Developer & Love to play Video Games";
+        let addedText = "";
+        let count = 0;
+        if (count < waitToType.length) {
+            addText = setInterval(() => {
+                //put the letter to the addedText ont by one
+                let addedText = waitToType.substring(0, count);
+                count = count + 1;
+                //display the typing letters 
+                onTyping.innerHTML = addedText;
+                if (count === waitToType.length) {
+                    //typing finished, clear interval
+                    clearInterval(addText)
+                }
+            }, 50)
+        }
+        //google map api
+        (function (exports) {
+            "use strict";
+
+            function initMap() {
+                exports.map = new google.maps.Map(document.getElementById("map"), {
+                    center: {
+                        lat: -33.885,
+                        lng: 151.177
+                    },
+                    zoom: 8
+                });
+            }
+
+            exports.initMap = initMap;
+        })((this.window = this.window || {}));
+
+        $(document).on('click', '#submit', function (evt) {
+            if ($(".contact-area").val() == "") {
+                $(".contact-area").val("You must enter the message !");
+                evt.preventDefault();  //阻止提交表单到第三方网站去
+            }
+        });
+
+        //drop down nav
+        function dropDown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropBtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+        //form validation
+        //get error elements by id
+        const nameError = document.getElementById('name-error');
+        const emailError = document.getElementById('email-error');
+        const messageError = document.getElementById('message-error');
+        //get inputs by id
+        const nameInput = document.getElementById('nameInput')
+        const emailInput = document.getElementById('emailInput')
+        const messageInput = document.getElementById('messageInput')
+
+        //configure the validation 
+        let emailTest = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+        let nameTest = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+        let isMessage = true;
+
+        //verify form submission before sending email
+        function handleSubmit(e) {
+
+            console.log("length", event.target.element);
+            if (messageInput.value.length < 5) {
+                isMessage = false;
+            }
+
+            let isEmail = emailTest.test(emailInput.value);
+            let isName = nameTest.test(nameInput.value)
+            if (isName === false) {
+                nameError.style.display = "block";
+                setTimeout(() => {
+                    nameError.style.display = "none"
+                }, 3000)
+            }
+            if (isEmail === false) {
+                emailError.style.display = "block";
+                setTimeout(() => {
+                    emailError.style.display = "none"
+                }, 3000)
+
+            }
+            if (isMessage === false) {
+                messageError.style.display = "block";
+                setTimeout(() => {
+                    messageError.style.display = "none"
+                }, 3000)
+
+            }
+
+
+            if (isMessage === false || isEmail === false || isMessage === false) {
+                event.preventDefault();
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

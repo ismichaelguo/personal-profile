@@ -17,11 +17,16 @@
       padding-top: 1rem;
       background-image: url("../image/resume-halftone.png");
       font-size: 2rem;
+
+      @include iphone(){
+        margin-top: 3rem;
+      }
     }
 
     &__timelines {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
 
       @include iphone() {
         flex-direction: column;
@@ -83,10 +88,13 @@
             font-size: 0.7rem;
             color: #2eca7f;
 
-            a{
+            a {
               text-decoration: none;
-              &:visited{
-                color:#2eca7f;
+              &:visited {
+                color: #2eca7f;
+              }
+              &:link{
+                color: #2eca7f;
               }
             }
           }
@@ -94,7 +102,7 @@
           & p {
             font-size: 0.9rem;
             margin-top: 0.4rem;
-            color:grey;
+            color: grey;
 
             &:after {
               content: "";

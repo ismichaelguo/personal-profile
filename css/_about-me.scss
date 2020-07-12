@@ -104,10 +104,10 @@
 
       & img {
         width: 22rem;
-        height: 30rem;
+        height: 34rem;
 
         @include iphone() {
-          width: 18rem;
+          width: 19rem;
           height: 26rem;
         }
       }

@@ -13,6 +13,10 @@
     background-image: url("../image/resume-halftone.png");
     text-align: center;
     margin: 0 auto;
+
+    @include iphone(){
+      margin-top: 3rem;
+    }
   }
 
   &__container {

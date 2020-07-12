@@ -177,12 +177,12 @@
 
 .aboutMe .aboutMe__container__photo img {
   width: 22rem;
-  height: 30rem;
+  height: 34rem;
 }
 
 @media (max-width: 375px) {
   .aboutMe .aboutMe__container__photo img {
-    width: 18rem;
+    width: 19rem;
     height: 26rem;
   }
 }
@@ -222,6 +222,12 @@
   font-size: 2rem;
 }
 
+@media (max-width: 375px) {
+  .myResume__container__title {
+    margin-top: 3rem;
+  }
+}
+
 .myResume__container__timelines {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,6 +235,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 375px) {
@@ -312,6 +320,10 @@
   color: #2eca7f;
 }
 
+.myResume__container__timelines .timeline__item span a:link {
+  color: #2eca7f;
+}
+
 .myResume__container__timelines .timeline__item p {
   font-size: 0.9rem;
   margin-top: 0.4rem;
@@ -346,6 +358,12 @@
   background-image: url("../image/resume-halftone.png");
   text-align: center;
   margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+  .myService h3 {
+    margin-top: 3rem;
+  }
 }
 
 .myService__container {
@@ -442,13 +460,22 @@
   margin: 0 auto;
 }
 
+@media (max-width: 375px) {
+  .myContact__title {
+    margin-top: 3rem;
+  }
+}
+
 .myContact__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 375px) {
@@ -461,8 +488,14 @@
 }
 
 .myContact__container__info {
-  width: 33rem;
+  width: 30rem;
   margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .myContact__container__info {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -477,9 +510,16 @@
 }
 
 .myContact__container__info .mapContainer {
-  width: 22rem;
+  width: 24rem;
   height: 13rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .myContact__container__info .mapContainer {
+    width: 20rem;
+    height: 11rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -538,7 +578,13 @@
 }
 
 .myContact__container__form {
-  width: 33rem;
+  width: 30rem;
+}
+
+@media (max-width: 768px) {
+  .myContact__container__form {
+    width: 25rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -637,6 +683,12 @@
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 375px) {
+  .myContact__container__form form button {
+    font-size: 0.9rem;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -698,6 +750,10 @@ body .header__nav li a:visited {
   color: black;
 }
 
+body .header__nav li a:link {
+  color: black;
+}
+
 body .header__nav li:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
@@ -736,14 +792,14 @@ body .header__dropdown div {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  width: 30rem;
+  width: 27rem;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   width: 25rem;
-  left: -18rem;
+  left: -11rem;
   background: url("../image/dropDown-stardust.png") repeat;
   opacity: 0.9;
   height: 100vh;
@@ -775,6 +831,14 @@ body .header__dropdown div a {
   margin-top: 3rem;
   margin-bottom: 2rem;
   font-family: "Roboto", sans-serif;
+}
+
+body .header__dropdown div a:link {
+  color: #ffda00;
+}
+
+body .header__dropdown div a:visited {
+  color: #ffda00;
 }
 
 @media (max-width: 375px) {
